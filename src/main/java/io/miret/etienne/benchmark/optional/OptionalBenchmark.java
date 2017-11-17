@@ -30,6 +30,10 @@ public class OptionalBenchmark {
       default:
         throw new IllegalStateException("Unsupported filling.");
     }
+    new Room(new Flat(new Floor(new Building(new Block(new District(new City(new Country("France"))))))));
+    for (int i = 0; i < 1000; i++) {
+	Optional.ofNullable (null);
+    }
   }
 
   @Benchmark
